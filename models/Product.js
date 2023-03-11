@@ -3,7 +3,7 @@ const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
-const Category = require('./category');
+// const Category = require('./category');
 
 // initialize product model (table) by extending off sequelize's Model class
 class Product extends Model {}
@@ -73,10 +73,10 @@ Product.init(
 //   }
 // );
 
-// define a relationship between the Product and Category models
-Product.belongsTo(Category, {
-  foreignKey: 'category_id', // the foreign key for the relationship
-});
+// // define a relationship between the Product and Category models
+// Product.belongsTo(Category, {
+//   foreignKey: 'category_id', // the foreign key for the relationship
+// });
 
 // export the product model for use in other parts of the application
 module.exports = Product;
