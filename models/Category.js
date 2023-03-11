@@ -4,7 +4,7 @@ const { Model, DataTypes } = require('sequelize');
 // import database connection object
 const sequelize = require('../config/connection.js');
 
-const Product = require('./product');
+// const Product = require('./Product');
 
 // define the category model as a subclass of sequelize's model class
 class Category extends Model {}
@@ -31,7 +31,6 @@ Category.init(
     modelName: 'category', // use the name 'category' for the model
   }
 );
-
 // Category.init(
 //   {
 //     // define columns
@@ -45,10 +44,16 @@ Category.init(
 //   }
 // );
 
-// define a relationship between the Category and Product models
-Category.hasMany(Product, {
-  foreignKey: 'category_id', // the foreign key for the relationship
-});
+// // define a relationship between the Category and Product models
+// Category.hasMany(Product, {
+//   foreignKey: 'category_id', // the foreign key for the relationship
+// });
+
+
+// Category.hasMany(Product, {
+//   foreignKey: 'category_id',
+// });
+
 
 // export the category model for use in other parts of the application
 module.exports = Category;
