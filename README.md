@@ -17,7 +17,7 @@
 -[Questions](#questions)
 
 ## Description
-A functional Express.js API that uses the latest technologies that serves as a back end for e-commerce.
+A functional Express.js API that uses the latest technologies and serves as a back end for e-commerce.
 
 ## Installation
 Clone repo: https://github.com/smcgarr13/E-commerce-Back-End
