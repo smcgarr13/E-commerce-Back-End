@@ -37,27 +37,13 @@ ProductTag.init(
   },
   {
     // define the metadata for the ProductTag model
-    sequelize,  // Use the sequelize connection object
-    timestamps: false,  // Don't include timestamp fields
-    freezeTableName: true,  // Use the model name as the table name
-    underscored: true,  // Use snake_case for column names
+    sequelize, // Use the sequelize connection object
+    timestamps: false, // Don't include timestamp fields
+    freezeTableName: true, // Use the model name as the table name
+    underscored: true, // Use snake_case for column names
     modelName: 'product_tag',  // Use the name 'product_tag' for the model
   }
 );
-
-
-// ProductTag.init(
-//   {
-//     // define columns
-//   },
-//   {
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'product_tag',
-//   }
-// );
 
 // export the ProductTag model for use in other parts of the application
 module.exports = ProductTag;

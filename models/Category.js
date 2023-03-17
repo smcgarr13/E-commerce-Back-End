@@ -31,29 +31,6 @@ Category.init(
     modelName: 'category', // use the name 'category' for the model
   }
 );
-// Category.init(
-//   {
-//     // define columns
-//   },
-//   {
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'category',
-//   }
-// );
-
-// // define a relationship between the Category and Product models
-// Category.hasMany(Product, {
-//   foreignKey: 'category_id', // the foreign key for the relationship
-// });
-
-
-// Category.hasMany(Product, {
-//   foreignKey: 'category_id',
-// });
-
 
 // export the category model for use in other parts of the application
 module.exports = Category;

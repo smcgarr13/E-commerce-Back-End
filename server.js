@@ -12,15 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
-
 // Sync Sequelize models to the database
 sequelize.sync({ force: false }).then(() => {
   console.log('All models have been synced to the database!');
 });
-
-// // create Product table if it doesn't exist
-// Product.sync();
-
 
 // start server
 app.listen(PORT, () => {
