@@ -1,5 +1,4 @@
 # E-commerce-Back-End
-A functional Express.js API that uses the latest technologies that serves as a back end for e-commerce
 
 [![OpenFaaS](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.openfaas.com)
 
@@ -18,13 +17,15 @@ A functional Express.js API that uses the latest technologies that serves as a b
 -[Questions](#questions)
 
 ## Description
-TBD
+A functional Express.js API that uses the latest technologies that serves as a back end for e-commerce.
 
 ## Installation
 Clone repo: https://github.com/smcgarr13/E-commerce-Back-End
 
 ## Usage
-TBD
+To use this application, add your database name, MySQL username, and MySQL password to the environment variable file so you can connect to a database using Sequelize.  When you enter schema and seed commands, a development database will be created and seeded with the test data provided.  When you enter the command to invoke the application, your server will be started and the Sequelize models will be synced to the MySQL database.
+
+When you open API GET routes in Insomnia Core for categories, products, or tags, the data for each of these routes will be displayed in formatted JSON.  When you test API POST, PUT, and DELETE routes in Insomnia Core, you will be able to successfully create, update, and delete data in your database.
 
 ## Credits
 N/A
@@ -53,7 +54,10 @@ Please email me directly if you have any additional questions.
 
 Email: unicorn@magical.com
 
-## Link to Demonstration Video:
+## Link to Demonstration Videos:
+SQL Shell, Seeding, & Start Application: https://drive.google.com/file/d/1iXPUqLqcLFNZ9Z4MwDL-7Xnc-ub7hgjg/view 
+
+Insomnia: https://drive.google.com/file/d/1qXlw0RJVxhwPR0o9kTyIy6qDN26WYtwl/view
 
 ## Link to Repo:
 https://github.com/smcgarr13/E-commerce-Back-End

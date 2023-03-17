@@ -26,27 +26,13 @@ Tag.init(
   },
   {
     // define the metadata for the tag model
-    sequelize,  // Use the sequelize connection object
-    timestamps: false,  // Don't include timestamp fields
-    freezeTableName: true,  // Use the model name as the table name
-    underscored: true,  // Use snake_case for column names
-    modelName: 'tag',  // Use the name 'tag' for the model
+    sequelize,  // use the sequelize connection object
+    timestamps: false,  // don't include timestamp fields
+    freezeTableName: true,  // use the model name as the table name
+    underscored: true,  // use snake_case for column names
+    modelName: 'tag',  // use the name 'tag' for the model
   }
 );
-
-
-// Tag.init(
-//   {
-//     // define columns
-//   },
-//   {
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'tag',
-//   }
-// );
 
 // define many-to-many association with product model
 const Product = require('./product.js');
